@@ -518,14 +518,12 @@ class World:
         return None
 
     def remove_plant(self, cell):
-        \
         gone = self.plant_at(cell)
         self.flowers = [f for f in self.flowers if (f[0], f[1]) != cell]
         self.triggers = [t for t in self.triggers if (t.r, t.c) != cell]
         return gone
 
     def walkable(self, r, c):
-        \
         return not self.solid(c, r) and (r, c) not in self.road and (r, c) not in self.parking
 
     def route(self, start, goal, passable, limit=60):
