@@ -23,14 +23,17 @@
 ### Установка
 Требуется Python 3.10 или новее.
 * Склонируй репозиторий:
+```
 git clone https://github.com/Nagisa100/lenskie-stolby-
+```
 * Установи зависимости:
+```
 pip install -r requirements.txt
-
+```
 ### Запуск
-
+```
 python main.py
-
+```
 ## Team CHRT
 ### Менеджер:
 * Тутынин Иван
